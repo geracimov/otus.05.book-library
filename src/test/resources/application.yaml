@@ -1,0 +1,15 @@
+spring:
+  shell:
+    interactive:
+      enabled: false
+    command:
+      help:
+        enabled: false
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    initialization-mode: always
+    data: testdata.sql
