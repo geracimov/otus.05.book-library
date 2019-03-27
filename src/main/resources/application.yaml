@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${APP_SERVERNAME:localhost}:${APP_SERVERPORT:5432}/${APP_DBNAME:postgres}
+    username: ${APP_USERNAME:postgres}
+    password: ${APP_SECRET:postgres}
+    initialization-mode: always
+    data: classpath:data.sql
+    schema: classpath:schema.sql
+
+logging:
+  level:
+    sql: error
+    org: error
+    com: error
+    ru: error
