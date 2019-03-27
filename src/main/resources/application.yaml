@@ -5,6 +5,8 @@ spring:
     username: ${APP_USERNAME:postgres}
     password: ${APP_SECRET:postgres}
     initialization-mode: always
+    data: classpath:data.sql
+    schema: classpath:schema.sql
 
 logging:
   level:
